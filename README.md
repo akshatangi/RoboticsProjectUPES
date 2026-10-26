@@ -8,7 +8,7 @@ Aniket Singh Bisht:
 SAP: 500121845
 github: Aniket71codes
 
-Harsh Verma:
+Harsh Varma:
 SAP: 500123444
 github: HarshVarma24
 
