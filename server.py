@@ -2,8 +2,7 @@
 
 One loop runs at a fixed rate (20 Hz).  Every tick it:
 
-  1. takes all commands that arrived since the last tick (they are put in a
-     queue by the transport's background thread) and acknowledges them;
+  1. takes all commands that arrived since the last tick (they are put in a queue by the transport's background thread) and acknowledges them;
   2. checks the link watchdog;
   3. reads pose and sonars from the backend;
   4. asks the motion controller for (v, omega);
