@@ -1,0 +1,17 @@
+# RTT estimator constants: RFC 6298 (Paxson et al., 2011) uses alpha = 1/8 and beta = 1/4.
+rtt:
+  alpha: 0.125
+  beta: 0.25
+
+# Adaptive watchdog: same smoothing as the RTT estimator, applied to heartbeat inter-arrival gaps.
+# timeout = mean + k * deviation, clamped to [t_min_factor * heartbeat period, t_max_ms].
+# k = 4 follows the RTO rule of RFC 6298; t_max_ms is a project choice (limits worst-case detection delay).
+adaptive_watchdog:
+  alpha: 0.125
+  beta: 0.25
+  k: 4.0
+  t_min_factor: 2.0
+  t_max_ms: 3000
+
+# Fixed timeouts compared against the adaptive watchdog in experiments E3 and E4 (project choice).
+fixed_watchdog_timeouts_ms: [400, 800, 1600]
