@@ -1,0 +1,12 @@
+# Runtime
+paho-mqtt>=2.0,<3          # MQTT transport
+# Experiments / plots
+matplotlib>=3.7
+numpy>=1.24
+# Tests
+pytest>=7
+# Real simulator backend (optional - only for --backend coppelia)
+coppeliasim-zmqremoteapi-client>=2.0
+# Report generation (optional - only for report/build_report.py)
+python-docx>=1.1
+pymupdf>=1.24
