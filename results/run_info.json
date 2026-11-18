@@ -1,0 +1,78 @@
+{
+  "S0_nagle": {
+    "finished": "2026-11-14T19:21:42",
+    "trials_per_cell": 10,
+    "rows": 40,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "S1_latency": {
+    "finished": "2026-11-14T19:21:42",
+    "trials_per_cell": 10,
+    "rows": 120,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "S2_square": {
+    "finished": "2026-11-14T19:31:15",
+    "trials_per_cell": 10,
+    "rows": 120,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "S3_operator": {
+    "finished": "2026-11-14T19:21:42",
+    "trials_per_cell": 10,
+    "rows": 120,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "S4_outage": {
+    "finished": "2026-11-14T19:36:34",
+    "trials_per_cell": 10,
+    "rows": 30,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "S5_safety": {
+    "finished": "2026-11-14T19:31:15",
+    "trials_per_cell": 10,
+    "rows": 120,
+    "backend": "mock",
+    "python": "3.12.3",
+    "machine": "Linux x86_64",
+    "workers": 16
+  },
+  "conditions": {
+    "C0_ideal": {
+      "delay_ms": 0,
+      "jitter_ms": 0,
+      "loss": 0.0
+    },
+    "C1_50ms": {
+      "delay_ms": 50,
+      "jitter_ms": 10,
+      "loss": 0.0
+    },
+    "C2_100ms_1pct": {
+      "delay_ms": 100,
+      "jitter_ms": 25,
+      "loss": 0.01
+    },
+    "C3_200ms_5pct": {
+      "delay_ms": 200,
+      "jitter_ms": 50,
+      "loss": 0.05
+    }
+  }
+}
