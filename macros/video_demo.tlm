@@ -1,0 +1,26 @@
+# Demo for the video (about 1.5 minutes). Run with the --gui server open:
+#   python -m teleop.cli --port 9000 --script macros/video_demo.tlm
+reset
+ping
+# 1) supervisory control: drive a loop around the room with goto
+goto 2 0
+wait
+goto 2 2.5
+wait
+goto 0 2.5
+wait
+goto 0 0
+wait
+# 2) relative commands
+turn 90
+wait
+move 1
+wait
+move -0.5
+wait
+# 3) safety: drive at the box and never send stop - the robot stops itself
+reset
+vel 0.5 0
+wait 11
+status
+stop

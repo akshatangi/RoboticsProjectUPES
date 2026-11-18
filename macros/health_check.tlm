@@ -1,0 +1,4 @@
+# Quick link check before a demo.
+ping
+rtt 20
+status

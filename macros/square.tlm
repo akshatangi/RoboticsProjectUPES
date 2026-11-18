@@ -1,0 +1,19 @@
+# Drive a 1 m square with move/turn (relative commands).
+# Run:  teleop> macro macros/square.tlm      or   python -m teleop.cli --script macros/square.tlm
+move 1 0.3
+wait
+turn 90
+wait
+move 1 0.3
+wait
+turn 90
+wait
+move 1 0.3
+wait
+turn 90
+wait
+move 1 0.3
+wait
+turn 90
+wait
+status

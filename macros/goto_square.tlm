@@ -1,0 +1,10 @@
+# Same square with absolute goals (supervisory control: robust to delay).
+goto 1 0
+wait
+goto 1 1
+wait
+goto 0 1
+wait
+goto 0 0
+wait
+status
